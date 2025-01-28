@@ -1,16 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/scss/index.css">
 </head>
-
 <body>
-   
+    <div class="global">
+        <header class="header">
+            <div id="logo">
+                <a href="index.html">
+                    <span class="icon"></span>
+                    Abde-rrahman
+                </a>
+            </div>
+            <nav class="navigation">
+                <a href="#home-section" class="link"><span>home</span></a>
+                <a href="#skills-section" class="link"><span>skills</span></a>
+                <a href="#projects-section" class="link"><span>projects</span></a>
+            </nav>
+        </header>
+        <section class="home-section">
+            <div class="home-content">
+                <img src="me.png" width="200px" height="200px" alt="me">
+                <h1>Hey I'am Abde-rrahman</h1>
+                <h3>frontend developer</h3>
+                <div class="media-links">
+                    <a href="#facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                            <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M17.5078 6.5L17.4988 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#github">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                            <path d="M10 20.5675C6.57143 21.7248 3.71429 20.5675 2 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 22V18.7579C10 18.1596 10.1839 17.6396 10.4804 17.1699C10.6838 16.8476 10.5445 16.3904 10.1771 16.2894C7.13394 15.4528 5 14.1077 5 9.64606C5 8.48611 5.38005 7.39556 6.04811 6.4464C6.21437 6.21018 6.29749 6.09208 6.31748 5.9851C6.33746 5.87813 6.30272 5.73852 6.23322 5.45932C5.95038 4.32292 5.96871 3.11619 6.39322 2.02823C6.39322 2.02823 7.27042 1.74242 9.26698 2.98969C9.72282 3.27447 9.95075 3.41686 10.1515 3.44871C10.3522 3.48056 10.6206 3.41384 11.1573 3.28041C11.8913 3.09795 12.6476 3 13.5 3C14.3524 3 15.1087 3.09795 15.8427 3.28041C16.3794 3.41384 16.6478 3.48056 16.8485 3.44871C17.0493 3.41686 17.2772 3.27447 17.733 2.98969C19.7296 1.74242 20.6068 2.02823 20.6068 2.02823C21.0313 3.11619 21.0496 4.32292 20.7668 5.45932C20.6973 5.73852 20.6625 5.87813 20.6825 5.9851C20.7025 6.09207 20.7856 6.21019 20.9519 6.4464C21.6199 7.39556 22 8.48611 22 9.64606C22 14.1077 19.8661 15.4528 16.8229 16.2894C16.4555 16.3904 16.3162 16.8476 16.5196 17.1699C16.8161 17.6396 17 18.1596 17 18.7579V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="skills-section" id="skills-section">
+            <h1 class="heading">skills</h1>
+            <div class="skills-content">
+                <div class="card">
+                    <img src="assets/icons/html-5.png" alt="html">
+                    HTML
+                    <p>is the standard language used to create and structure content on the web. It provides the foundation for building web pages and web applications.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/css-3.png" alt="css">
+                    CSS
+                    <p>
+                        is a language used to style and layout web pages. While HTML provides the structure of a webpage, CSS makes it visually appealing and user-friendly.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/js.png" alt="javascript">
+                    JAVASCRIPT
+                    <p> is a programming language that adds interactivity, functionality, and logic to web pages. While HTML structures a webpage and CSS styles it, JavaScript makes it dynamic and responsive.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/sass.png" alt="sass">
+                    SASS
+                    <p>
+                        is a CSS preprocessor that extends CSS with powerful features like variables, nesting, mixins, and more. It helps write cleaner, more organized, and reusable styles, making it easier to manage large projects.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/github.png" alt="github">
+                    github
+                    <p>
+                        is a platform for developers to collaborate, share code, and manage projects. It’s built on Git, a version control system that tracks changes to files, making it easier to work on projects (especially coding) with others or by yourself.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/git.png" alt="git">
+                    GIT
+                    <p>
+                        is a distributed version control system that tracks changes in your files (primarily code) and helps you collaborate with others effectively. It's the tool that powers platforms like GitHub, GitLab, and Bitbucket.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="projects-section" id="projects-section">
+            <h1 class="heading">Projects</h1>
+            <div class="projects-content">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="assets/images/3885883.jpg" alt="">
+                        <h2 class="title">title</h2>
+                        <p class="technology">
+                            <span>#html</span>
+                            <span>#css</span>
+                            <span>#js</span>
+                        </p>
+                        <a href="" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                                <path d="M10 13.229C10.1416 13.4609 10.3097 13.6804 10.5042 13.8828C11.7117 15.1395 13.5522 15.336 14.9576 14.4722C15.218 14.3121 15.4634 14.1157 15.6872 13.8828L18.9266 10.5114C20.3578 9.02184 20.3578 6.60676 18.9266 5.11718C17.4953 3.6276 15.1748 3.62761 13.7435 5.11718L13.03 5.85978" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M10.9703 18.14L10.2565 18.8828C8.82526 20.3724 6.50471 20.3724 5.07345 18.8828C3.64218 17.3932 3.64218 14.9782 5.07345 13.4886L8.31287 10.1172C9.74413 8.62761 12.0647 8.6276 13.4959 10.1172C13.6904 10.3195 13.8584 10.539 14 10.7708" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M21.0001 16H18.9212M16.0001 21L16.0001 18.9211" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.00009 8H5.07898M8.00009 3L8.00009 5.07889" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            website
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>

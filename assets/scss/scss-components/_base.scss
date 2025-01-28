@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url(/assets/fonts/Comfortaa-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 12px;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: $color-primary-3;
+    border-radius: 20px;
+}
+body{
+    font-family: "Comfortaa";
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.global{
+    max-width: 1000px;
+    height: fit-content;
+    margin: auto;
+    background: $color-primary-1;
+    animation:  global-animation 1s ease;
+}
+section{
+    position: relative;
+    flex-direction: column;
+    .heading{
+        width: 100%;
+        margin-bottom: 50px;
+        font-size: generate-rem(50);
+        color: $color-primary-3;
+        text-align: center;
+    }
+}

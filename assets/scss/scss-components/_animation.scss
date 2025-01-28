@@ -1,0 +1,39 @@
+@keyframes  global-animation{
+    from{
+        transform: scale(2);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes  moving-animation{
+    from{
+        margin-top: 30px;
+        opacity: 0;
+    }
+    to{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes hover-effect-1 {
+    from{
+        width: 4px;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes hover-effect-2 {
+    from{
+        width: 0%;
+        height: 0%;
+    }
+    to{
+        width: 100%;
+        height: 100%;
+    }
+}
